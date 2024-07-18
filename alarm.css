@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    background-image: url(alarm.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+ 
+}
+
+
+#navbar {
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;
+    width: 100%;
+      background-color: rgb(15, 14, 14);
+  }
+  
+    .nav{
+      color: white;
+      margin-left: 17px;
+      font-size: 2.5rem;
+      font-family: 'Whisper', cursive;
+      /* font-weight: bold; */
+      /* margin-top: 150px; */
+      text-align: center;
+      
+     
+      color: #ffffcc;
+      text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px rgb(0, 0, 0),
+        0 0 30px rgb(0, 213, 67),
+        0 0 40px rgb(0, 0, 0),
+        0 0 55px rgb(201, 213, 67),
+        0 0 70px rgb(201, 213, 67);
+    }
+  nav ul{
+  display: flex;
+  font-family: 'DM Serif Display', serif;
+  }
+  nav ul li {
+      font-size: 1.4rem;
+      list-style: none;
+     
+    }
+    nav ul li a {
+      color: rgb(22, 19, 19);
+      padding: 3px 22px;
+      text-decoration: none;
+      border-radius: 20px;
+      color: rgb(170, 170, 27);
+    }
+    nav ul li a:hover{
+      font-size: 1.6rem;
+      color: #ffffcc;
+      text-shadow: 0 0 5px #fff,
+        0 0 0px #fff,
+        0 0 0px yellow,
+        0 0 30px yellow,
+        0 0 40px yellow,
+        0 0 55px yellow,
+        0 0 70px yellow;
+  
+    }
+    #container{
+        padding-top: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        /* flex-direction: column; */
+      }
+    
+    .clock{
+        background-color: rgb(22, 7, 7);
+        width: 371px;
+        height: 371px;
+        max-width: 537px;
+        /* min-width: 30px; */
+        border-radius: 50%; 
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+        border: 5px solid rgb(222 186 7);
+        box-shadow: 0 0 5px #eae2d3, 0 0 0px #f2d6a3, 0 0 1px #eab657, 0 0 15px #dec598, 0 0 20px #ff0000, 0 0 0px #fdd7a8, 0 0 0px #ff0000
+        /* margin-left: 98px; */
+    }
+    
+    .clock ul li{
+        position: absolute;
+        transform: rotate(calc(30deg * var(--x)));
+        list-style: none;
+        text-align: center;
+        inset: 20px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #e6cd95;
+        font-family: 'Lobster', sans-serif;
+    }
+    .clock ul li span{
+        transform: rotate(calc(-30deg * var(--x)));
+        display: inline-block;
+    }
+    /* .center{
+        width: 10px;
+        height: 10px; 
+        background-color: black;
+        position: absolute;
+        border-radius: 50%;
+    } */
+    .clock::after{
+        content: '';
+        width: 10px;
+        height: 10px; 
+        background-color: rgb(250, 244, 244);
+        position: absolute;
+        border-radius: 50%;
+    }
+    
+    .hour-hand,.minute-hand,.second-hand{
+        position: absolute;
+        --rotate: 0;
+        transform: translate((-50%)rotate(var(--rotate) * 1deg));
+        left: 49.2%;
+        bottom: 50%;
+        transform-origin: bottom;
+        border-radius: 10px;
+    }
+    .hour-hand{
+        background-color: #721717;
+        width: 6px;
+        height: 91px;
+    }
+    .minute-hand{
+        background-color: rgb(22 52 145);
+        width: 5px;
+        height: 155px;
+    }
+    .second-hand{
+        background-color: rgb(4 146 23);
+        width: 2.5px;
+        height: 156px;
+    }
+    
+    .left{
+        background-color: #e4f3ff;
+        height: 30rem;
+        width: 30rem;
+        padding: 30px;
+        text-align: center;
+        border: 6px solid #e3e253;
+        border-radius: 72px;
+        background-color: #030b19;
+background-image: linear-gradient(180deg, #000000 0%, #9c2f7e 100%);
+
+    }
+    .flex{
+        display: flex;
+        /* align-items: center;
+        justify-content: center; */
+       
+    }
+
+    form label{
+        font-size: 1.5rem;
+        color:  #c9e70b;
+        font-weight: bold;
+    }
+    form input{
+        /* margin: 5px; */
+        /* height: 2.7rem;*/
+        width: 11rem; 
+        border-radius: 34px;
+        border: 1px solid black;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0.5rem;
+        text-align: center;
+        font-family: 'Arvo', serif;
+    }
+    form select{
+        /* height: 2.7rem; */
+        width: 11rem;
+        border-radius: 34px;
+        border: 1px solid black;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0.5rem;
+        text-align: center;
+        font-family: 'Arvo', serif;
+        
+    }
+    .left h2{
+        font-size: 3rem;
+    /* color: #e84c49; */
+    text-shadow:0 0 5px #ffa500, 0 0 1px #ffa500, 0 0 5px #ffa500, 0 0 3px #ffa500, 0 0 20px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+    font-family: 'Mina', sans-serif;
+    }
+
+    form button{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0.5rem;
+        text-align: center;
+        width: 5rem;
+        border-radius: 34px;
+        border: 1px solid black;
+        font-family: 'Arvo', serif;
+    }
+    #set{
+        background-color: green;
+
+    }
+    #stop{
+        background-color: red;
+    }
+    form button:hover{
+        /* font-size: 1.8rem; */
+        
+        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab);
+        cursor:pointer;
+        color: white;
+        width: 5.3rem;
+        border: none;
+        
+    }

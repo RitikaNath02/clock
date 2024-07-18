@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lobster&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(timer2.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+
+#navbar {
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 96px;
+  width: 100%;
+  background-color: rgb(15, 14, 14);
+}
+
+.nav {
+  color: white;
+  margin-left: 17px;
+  font-size: 2.5rem;
+  font-family: "Whisper", cursive;
+  /* font-weight: bold; */
+  /* margin-top: 150px; */
+  text-align: center;
+
+  color: #ffffcc;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px rgb(0, 0, 0),
+    0 0 30px rgb(0, 213, 67), 0 0 40px rgb(0, 0, 0), 0 0 55px rgb(201, 213, 67),
+    0 0 70px rgb(201, 213, 67);
+}
+nav ul {
+  display: flex;
+  font-family: "DM Serif Display", serif;
+}
+nav ul li {
+  font-size: 1.4rem;
+  list-style: none;
+}
+nav ul li a {
+  color: rgb(22, 19, 19);
+  padding: 3px 22px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: rgb(170, 170, 27);
+}
+nav ul li a:hover {
+  font-size: 1.6rem;
+  color: #ffffcc;
+  text-shadow: 0 0 5px #fff, 0 0 0px #fff, 0 0 0px yellow, 0 0 30px yellow,
+    0 0 40px yellow, 0 0 55px yellow, 0 0 70px yellow;
+}
+
+
+
+.second-hand {
+    background-image: url("second.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 44.5px;
+    height: 357px;
+    position: absolute;
+    top: -10%;
+    left: 42.8%
+}
+
+
+
+.clock {
+  background-image: url("stopwatch_clock.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top:  16%;
+  left: 39%;
+ 
+}
+
+.digital-clock{
+    display: flex;
+    align-items: center;
+     justify-content: center;
+    /* flex-direction: column;  */
+    position: absolute;
+    top:  59%;
+    left: 37%;
+    background-color: #d6d6ca;
+    height: 70px;
+    border-radius: 20px;
+    /* border: 2px solid green; */
+    width: 350px;
+    padding: 4px 0px;
+    border: 3px solid #688aff;
+    /* box-shadow:20px -15px 15px rgb(59, 37, 165) */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* utility classes */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#buttons{
+    position: absolute;
+    top: 78%;
+    left: 26%;
+   
+}
+#start{
+    height: 57px;
+    width: 158px;
+    margin: 0 40px;
+    border-radius: 20px;
+    background-color: #9fa3dd;
+
+   
+    font-family: 'Russo One', sans-serif;
+
+
+  padding: 11px 25px;
+ 
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  /* font-weight: bold; */
+  font-size: 1.8rem;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
+}
+    
+
+#pause{
+  height: 57px;
+    width: 158px;
+    margin: 0 40px;
+    border-radius: 20px;
+    background-color: #9fa3dd;
+
+   
+    font-family: 'Russo One', sans-serif;
+
+
+  padding: 11px 25px;
+ 
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  /* font-weight: bold; */
+  font-size: 1.8rem;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
+}
+#reset{
+  height: 57px;
+  width: 158px;
+  margin: 0 40px;
+  border-radius: 20px;
+  background-color: #9fa3dd;
+
+ 
+  font-family: 'Russo One', sans-serif;
+
+
+padding: 11px 25px;
+
+background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+border-radius: 14px;
+/* font-weight: bold; */
+font-size: 1.8rem;
+
+border: 0;
+
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+
+cursor: pointer;
+}
+#start:hover{
+    
+    /* border: 5px solid green; */
+    border-radius: 20px;
+    background-color: rgb(163, 238, 163);
+}
+#pause:hover{
+    
+    /* border: 5px solid red; */
+    border-radius: 20px;
+    background-color: rgb(249, 161, 161);
+}
+#reset:hover{
+   
+    /* border: 5px solid blue; */
+    border-radius: 20px;
+    background-color: rgb(99, 165, 197);
+}
+
+

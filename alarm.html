@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="alarm.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav">QuantumQuartz</div>
+      <ul>
+        <li class="item"><a href="index.html">World Clock</a></li>
+        <li class="item"><a href="alarm.html">Alarm</a></li>
+        <li class="item"><a href="stopWatch.html">Stop Watch</a></li>
+        <li class="item"><a href="timer.html">Timer</a></li>
+      </ul>
+    </nav>
+    <div id="container" >
+      <div class="left">
+        <h2>Set Alarm</h2>
+        <br>
+       
+        <form action="">
+            <label for="hour">Enter hour:</label>
+            <br>
+            <input type="number" id="hour" max="12" min="1" value="12">
+            <br>
+           <br>
+            <label for="min">Enter minutes:</label>
+            <br>
+            <input type="number" id="min"  max="59" min="0" value="00">
+            <br>
+            <br>
+            <br>
+            <select name="" id="ampm">
+                <option value="am">am</option>
+                <option value="pm">pm</option>
+            </select>
+            <br>
+            <br>
+            <button onclick="alarmring()" id="set">Set</button>
+           
+
+            <button onclick="alarmstop()" id="stop">Stop</button>
+
+            
+        </form>
+      </div>
+
+      <div class="clock">
+        <ul class="flex">
+          <li style="--x: 1"><span>1</span></li>
+          <li style="--x: 2"><span>2</span></li>
+          <li style="--x: 3"><span>3</span></li>
+          <li style="--x: 4"><span>4</span></li>
+          <li style="--x: 5"><span>5</span></li>
+          <li style="--x: 6"><span>6</span></li>
+          <li style="--x: 7"><span>7</span></li>
+          <li style="--x: 8"><span>8</span></li>
+          <li style="--x: 9"><span>9</span></li>
+          <li style="--x: 10"><span>10</span></li>
+          <li style="--x: 11"><span>11</span></li>
+          <li style="--x: 12"><span>12</span></li>
+        </ul>
+
+        <div id="hour-hand" class="hour-hand"></div>
+        <div id="minute-hand" class="minute-hand"></div>
+        <div id="second-hand" class="second-hand"></div>
+      </div>
+    </div>
+    <audio src="Alarm.mp3" id="audio"></audio>
+    <script src="alarm.js"></script>
+  </body>
+</html>
